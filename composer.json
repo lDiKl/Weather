@@ -1,0 +1,23 @@
+{
+  "name": "kostynenko/weather",
+  "description": "Magento 2 weather module",
+  "require": {
+    "php": ">=7.2"
+  },
+  "type": "magento2-module",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Dmytro Kostynenko",
+      "email": "dik.work@gmail.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Kostynenko\\Weather\\": ""
+    }
+  }
+}

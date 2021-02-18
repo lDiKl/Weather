@@ -1,0 +1,17 @@
+<?php /**
+ * @var $block Kostynenko\Weather\Block\Weather
+ */
+$weather = $block->getWeatherInformation();
+
+?>
+<div class="block block-weather">
+    <div class="block-title">
+        <strong>Weather in <?= $weather['name']?></strong>
+    </div>
+    <div class="block-content">
+        <div class="weather-title"><?= $weather['main'] ?></div>
+        <div class="weather-temp"><?= $weather['temp'] ?> <span>&#8451;</span></div>
+        <div class="weather-icon"><img src="<?= $weather['icon'] ?>"></div>
+        <div class="weather-description"><?= $weather['description'] ?></div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="kostynenko" sortOrder="777" translate="label">
+            <label>Kostynenko</label>
+        </tab>
+        <section id="dk_weather" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Weather</label>
+            <tab>kostynenko</tab>
+            <resource>Kostynenko_Weather::config</resource>
+            <group id="config" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Configuration</label>
+                <field id="apikey" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="obscure">
+                    <label>API Key</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <field id="city" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                    <label>City</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
